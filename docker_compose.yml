@@ -26,7 +26,7 @@ services:
       ollama serve & 
       sleep 5 && 
       ollama pull nomic-embed-text && 
-      ollama pull llama3.1 &
+      ollama pull llama3.1 & # <-- change this to any supported Ollama model
       wait
       "
 

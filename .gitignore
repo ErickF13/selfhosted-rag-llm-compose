@@ -1,0 +1,4 @@
+# Ignore folders for persistent data created by the local RAG setup
+anythingllm/
+chroma_data/
+ollama/

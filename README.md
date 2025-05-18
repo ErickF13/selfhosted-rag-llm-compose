@@ -47,13 +47,13 @@ ollama pull llama3.1 &&  # <-- change this to any supported Ollama model
 
 Supported models: [`llama3`, `mistral`, `nomic-embed-text`, etc.](https://ollama.com/library)
 
-3. **Build the containers**:
+3. **Build the container/Run the container**:
 
 ```bash
-docker-compose build
+docker compose -f docker_compose.yml -p local-rag-llm up --build
 ```
 
-4. **Run the containers**:
+4. **Stop the container**:
 
 ```bash
 docker-compose up -d
@@ -73,14 +73,10 @@ docker-compose up -d
 To stop and clean up the containers:
 
 ```bash
-docker-compose down
+docker compose -f docker_compose.yml -p local-rag-llm down
 ```
 
-If you want to stop only (without removing volumes):
-
-```bash
-docker-compose stop
-```
+This will remove the container but the docker_compose is set to use persistent storage. To rebuild the docer_compose from scratch, is needed to remove the anythingllm, ollama and chroma_data folders that are created where the repositorio was cloned.
 
 ---
 

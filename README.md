@@ -80,12 +80,6 @@ This will remove the container but the docker_compose is set to use persistent s
 
 ---
 
-## 📜 License
-
-MIT – use freely, modify, and improve!
-
----
-
 ## 🤝 Acknowledgments
 
 - [Ollama](https://ollama.com) for fast local LLM serving.
